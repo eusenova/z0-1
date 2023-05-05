@@ -1,0 +1,62 @@
+.services-block {
+    padding: 31px 0;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-block__service {
+    box-sizing: border-box;
+    padding: 18px 15px 44px;
+    background-color: var(--services-back);
+    flex-basis: 31.6%;
+    border-left: 5px solid var(--main-color);
+    background-repeat: no-repeat;
+    background-position: 93% 43%;
+}
+
+.services-block__service:not(.services-block__service:first-child):hover {
+    cursor: pointer;
+    background: var(--main-color);
+    color: var(--basic-color);
+}
+
+.services-block__service:first-child {
+    border-color: var(--services-border);
+    background-image: url(../images/work.png);
+
+}
+
+.services-block__service:last-child {
+    background-image: url(../images/tick.png);
+}
+
+.services-block__service:nth-child(2) {
+    background-image: url(../images/setting.png);
+}
+
+.services-block__service:first-child .services-block__service-title{
+    font-weight: 400;
+}
+
+.services-block__service-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.services-block__service-text {
+    margin: 3px 0 0;
+    line-height: 21px;
+}
+
+@media screen and (max-width: 950px) {
+    .services-block__service {
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+    .services-block{
+        padding-bottom: 0;
+    }
+}
