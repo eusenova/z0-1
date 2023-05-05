@@ -1,0 +1,83 @@
+.footer {
+    background: var(--text-color);
+    margin-top: 10px;
+    color: var(--basic-color);
+    padding: 56px 0 15px;
+}
+
+.footer__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.05px;
+}
+
+.footer__tag {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15.73px;
+    text-align: center;
+    margin-top: 27px;
+    padding-top: 18px;
+    border-top: 1px solid #262626;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-image-wrapper img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.footer__list {
+    margin: 16px 0 22px;
+    padding: 0;
+}
+
+.footer__list:not(.footer__list:last-child) {
+    border-bottom: 1px solid #262626;
+}
+
+.footer__list-item {
+    list-style: none;
+    margin-bottom: 13px;
+
+}
+
+.footer__list-link {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2%;
+    line-height: 15.73px;
+    
+}
+
+.footer__list-link::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 18px;
+    margin-right:17px;
+    background: no-repeat center;
+}
+
+.footer__list:nth-child(2) .footer__list-link::before {
+    background-image: url(../images/phone.png);
+}
+
+.footer__list:nth-child(3) .footer__list-link:first-child:before {
+    background-image: url(../images/fb.png);
+}
+
+.footer__list:nth-child(3) .footer__list-link:last-child:before {
+    background-image: url(../images/yt.png);
+}
+
+.footer__list:nth-child(4) .footer__list-link::before {
+    background-image: url(../images/location.png);
+}
