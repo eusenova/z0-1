@@ -38,6 +38,7 @@
 
 .header__promo-link {
     margin-top: 51px;
+    width: 198px;
     border: 1px solid var(--basic-color);
     color: var(--basic-color);
     margin-left: 67px;

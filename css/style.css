@@ -21,7 +21,7 @@ a {
     text-align: center;
     color: var(--main-color);
     display: block;
-    width: 198px;
+    max-width: 260px;
     height: 40px;
     box-sizing: border-box;
     padding-top: 11px;
