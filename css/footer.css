@@ -24,11 +24,11 @@
 
 .footer-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .footer-image-wrapper img {
+    cursor: pointer;
     display: block;
     height: auto;
     width: 100%;
@@ -80,4 +80,22 @@
 
 .footer__list:nth-child(4) .footer__list-link::before {
     background-image: url(../images/location.png);
+}
+
+@media screen and (max-width: 1150px) {
+    .footer-image-wrapper {
+        flex-basis: 80%;
+    }
+    .footer {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-wrapper{
+        flex-wrap: wrap;
+    }
+    .footer-image-wrapper {
+        flex-basis: 100%;
+    }
 }
